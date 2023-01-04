@@ -23,6 +23,8 @@ import {
    SiLinux,
    SiSolidity,
    SiReact,
+   SiCplusplus,
+   SiExpress,
 } from "react-icons/si";
 
 function Hero() {
@@ -37,23 +39,25 @@ function Hero() {
          </p>
          <button>Get in touch</button>
          <div className="stak-icons">
-            <IoLogoJavascript className="icon"/>
-            <SiTypescript className="icon"/>
-            <IoLogoPython className="icon"/>
-            <SiSolidity className="icon"/>
-            <IoLogoSass className="icon"/>
-            <IoLogoHtml5 className="icon"/>
-            <IoLogoCss3 className="icon"/>
-            <SiReact className="icon"/>
-            <SiNextdotjs className="icon"/>
-            <SiDjango className="icon"/>
-            <SiPostgresql className="icon"/>
-            <SiMongodb className="icon"/>
-            <SiTailwindcss className="icon"/>
-            <SiBootstrap className="icon"/>
-            <SiFirebase className="icon"/>
-            <SiVisualstudiocode className="icon"/>
-            <SiLinux className="icon"/>
+            <IoLogoJavascript className="icon" />
+            <SiTypescript className="icon" />
+            <IoLogoPython className="icon" />
+            <SiSolidity className="icon" />
+            <SiCplusplus className="icon" />
+            <IoLogoSass className="icon" />
+            <IoLogoHtml5 className="icon" />
+            <IoLogoCss3 className="icon" />
+            <SiReact className="icon" />
+            <SiNextdotjs className="icon" />
+            <SiDjango className="icon" />
+            <SiExpress className="icon" />
+            <SiPostgresql className="icon" />
+            <SiMongodb className="icon" />
+            <SiTailwindcss className="icon" />
+            <SiBootstrap className="icon" />
+            <SiFirebase className="icon" />
+            <SiVisualstudiocode className="icon" />
+            <SiLinux className="icon" />
          </div>
       </div>
    );
