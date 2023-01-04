@@ -1,0 +1,78 @@
+.hero {
+   color: white;
+   padding: 50px 20px;
+
+   @media (min-width: 768px) {
+      p {
+         font-size: 19px;
+      }
+   }
+
+   @media (min-width: 1028px) {
+
+      padding: 70px 100px;
+      p {
+         font-size: 19px;
+      }
+   }
+
+   p:first-child {
+      color: var(--colorSecondary);
+      margin-bottom: 30px;
+   }
+
+   h1, h2 {
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      line-height: 50px;
+
+      @media (min-width: 768px) {
+         font-size: 40px;
+      }
+   }
+
+   h2 {
+      opacity: .7;
+   }
+   
+   p:not(:first-child) {
+      margin: 40px 0;
+      line-height: 30px;
+   }
+
+   button {
+      border: 1px solid var(--colorSecondary);
+      color: white;
+      padding: 10px 20px;
+      margin-bottom: 50px;
+      cursor: pointer;
+      transition: color .3s ease-in;
+   }
+
+   button:hover {
+      color: var(--colorSecondary);
+   }
+
+   .stak-icons {
+      color: var(--colorSecondary);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 50px;
+
+      @media (min-width: 768px) {
+         margin-top: 70px;
+      }
+
+      .icon {
+         font-size: 30px;
+         margin: 5px;
+
+         @media (min-width: 768px) {
+         font-size: 40px;
+      }
+      }
+   }
+}
