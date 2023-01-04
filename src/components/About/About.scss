@@ -99,6 +99,10 @@
          grid-template-columns: 1fr 1fr;
          margin-top: 20px;
 
+         @media (min-width: 1028px) {
+            grid-template-columns: 1fr 1fr 1fr;
+         }
+
          .tool {
             display: flex;
             align-items: center;
