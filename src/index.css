@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+
+  background: rgb(2, 6, 36);
+
+  --colorSecondary: rgb(34, 172, 158);
+  font-family: 'Space Mono', monospace;
+}
+
+
