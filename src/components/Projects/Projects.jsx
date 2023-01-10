@@ -5,6 +5,7 @@ import Project from "./Project";
 import project1 from "../../assets/projects/project1.png";
 import project2 from "../../assets/projects/project2.png";
 import project3 from "../../assets/projects/project3.png";
+import project4 from "../../assets/projects/project4.png";
 
 
 
@@ -43,6 +44,18 @@ const projects = [
          url: "https://glitch-cloud.vercel.app/",
       },
       image: project3,
+   },
+   {
+      name: "Space Cadet",
+      projectType: "Frontend mentor",
+      projectDescription:
+         "This project shows information about space. It is a front end mentor challenge. The major take away from this project was the use of animations using `react-animation-on-scroll`. I aslo practiced my TypeScript.",
+      tools: ["React", "TypeScript", "Sass", "NextJS"],
+      links: {
+         github: "https://github.com/webala/space-tourism-site",
+         url: "https://space-tourism-site-beta.vercel.app/",
+      },
+      image: project4,
    },
 ];
 
