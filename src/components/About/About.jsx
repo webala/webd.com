@@ -8,7 +8,7 @@ import dp from "../../assets/dp.jpg"
 
 function About() {
    return (
-      <div className="about">
+      <div className="about" id="about">
          <div className="title">
             <div>
                <span>01.</span>
@@ -26,7 +26,7 @@ function About() {
                   </p>
 
                   <p>
-                     My graatest strength is creativity and programming has
+                     My greatest strength is creativity and programming has
                      provided the perfect platform to express myself. I spend
                      most of my time looking for ways to perfect my skill and
                      while they say that you can't be perfect, I can try to get
@@ -36,7 +36,7 @@ function About() {
                   <p>
                      In my time as a programmer, I have worked in the freelance
                      market building various projects for different clients from
-                     all over the world thanks to the internet and how much it
+                     all over the world thanks to the internet and how it
                      has brought us all together.
                   </p>
                   <p>

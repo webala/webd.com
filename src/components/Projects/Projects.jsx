@@ -24,7 +24,8 @@ const projects = [
 	{
 		name: "Cake Fairy",
 		projectType: "Freelance project",
-		projectDescription: "Cake Fairy is a website used by a cake business. Other than its awesome interface, users can place orders for cakes and make payments online in a secure way.",
+		projectDescription:
+			"Cake Fairy is a website used by a cake business. Other than its awesome interface, users can place orders for cakes and make payments online in a secure way.",
 		tools: ["React", "TypeScript", "Sass", "NextJS"],
 		links: {
 			github: "https://github.com/webala/wubalubadubdub",
@@ -71,7 +72,7 @@ const projects = [
 
 function Projects() {
 	return (
-		<div className="projects">
+		<div className="projects" id="projects">
 			<div className="title">
 				<div>
 					<span>02.</span>

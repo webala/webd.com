@@ -9,6 +9,7 @@ function Project({ project }) {
       <div className="project">
          <div className="image">
             <div className="container">
+              
                <img src={project.image} alt="project" />
             </div>
          </div>

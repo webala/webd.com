@@ -77,13 +77,18 @@
 
       .image {
          margin: 50px 0;
-         img {
-            width: 350px;
 
-            @media (min-width: 768px) {
-               width: 500px;
+         .container {
+            img {
+               width: 750px;
+   
+               @media (min-width: 768px) {
+                  width: 100%;
+               }
             }
          }
+         
+         
       }
 
       .details {

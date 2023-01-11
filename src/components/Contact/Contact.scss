@@ -113,6 +113,7 @@
                color: white;
                padding: 7px;
                border: 1px solid var(--colorSecondary);
+               background: rgb(2, 6, 36);;
             }
 
             input:focus,
@@ -126,6 +127,11 @@
                color: white;
                border: 1px solid var(--colorSecondary);
                padding: 6px 10px;
+               transition: color .3s ease-in;
+            }
+
+            button:hover {
+               color: var(--colorSecondary);
             }
          }
       }
