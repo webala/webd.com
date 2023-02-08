@@ -3,18 +3,21 @@
 import React from "react";
 import "./Projects.scss";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function Project({ project }) {
    return (
       <div className="project">
          <div className="image">
             <div className="container">
-              
                <img src={project.image} alt="project" />
             </div>
          </div>
          <div className="details">
-            <h1>{project.name}</h1>
+            <AnimationOnScroll animateIn="animate__heartBeat">
+               <h1>{project.name}</h1>
+            </AnimationOnScroll>
+
             <p className="project-type">{project.projectType}</p>
 
             <div className="description">
@@ -22,18 +25,24 @@ function Project({ project }) {
             </div>
             <div className="tools">
                {project.tools.map((tool, index) => (
-                  <p key={index}>{tool}</p>
+                  <AnimationOnScroll animateIn="animate__fadeInBottomRight">
+                     <p key={index}>{tool}</p>
+                  </AnimationOnScroll>
                ))}
             </div>
             <div className="links">
                {project.links.url && (
                   <a href={project.links.url} target="_blank">
-                     <FiExternalLink />
+                     <AnimationOnScroll animateIn="animate__rubberBand" delay={1000}>
+                        <FiExternalLink />
+                     </AnimationOnScroll>
                   </a>
                )}
-               
+
                <a href={project.links.github} target="_blank">
-                  <FiGithub />
+                  <AnimationOnScroll animateIn="animate__rubberBand" delay={1000}>
+                     <FiGithub />
+                  </AnimationOnScroll>
                </a>
             </div>
          </div>

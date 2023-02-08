@@ -21,7 +21,6 @@
       @media (min-width: 1028px) {
          margin-bottom: 150px;
       }
-      
 
       div:first-child {
          display: flex;
@@ -71,7 +70,7 @@
          margin-bottom: 100px;
       }
 
-       @media (min-width: 1028px) {
+      @media (min-width: 1028px) {
          padding: 0 100px;
       }
 
@@ -80,15 +79,13 @@
 
          .container {
             img {
-               width: 750px;
-   
+               max-width: 100%;
+
                @media (min-width: 768px) {
-                  width: 100%;
+                  max-width: 500px;
                }
             }
          }
-         
-         
       }
 
       .details {
@@ -114,7 +111,7 @@
             border-bottom: 1px solid var(--colorSecondary);
             width: fit-content;
 
-             @media (min-width: 768px) {
+            @media (min-width: 768px) {
                font-size: 24px;
             }
          }

@@ -4,17 +4,105 @@ import React from "react";
 import "./About.scss";
 import { BiRightArrow } from "react-icons/bi";
 import dp from "../../assets/dp.jpg"
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 function About() {
+
+   const tools = [
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>JavaScript (ES6+)</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>TypeScript</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Python</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>C++</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Solidity</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>HTML & CSS</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Sass</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Django</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>React</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Tailwind</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Bootstrap</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Django Rest Framework</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>React Query</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Redux</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Redux Toolkit</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Firebase</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Express</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>Postgresql</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>MongoDB</p>
+      </div>),
+      (<div className="tool">
+         <BiRightArrow className="icon" />
+         <p>NodeJs</p>
+      </div>)
+   ]
    return (
       <div className="about" id="about">
          <div className="title">
-            <div>
-               <span>01.</span>
-               <h1>About me</h1>
-            </div>
+            <AnimationOnScroll animateIn="animate__fadeInLeft">
+               <div>
+                  <span>01.</span>
+                  <h1>About me</h1>
+               </div>
+            </AnimationOnScroll>
+
             <div className="line"></div>
+
          </div>
 
          <div className="details">
@@ -50,91 +138,18 @@ function About() {
                   </p>
                </div>
                <div className="tools">
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>JavaScript (ES6+)</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>TypeScript</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Python</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>C++</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Solidity</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>HTML & CSS</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Sass</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Django</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>React</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Tailwind</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Bootstrap</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Django Rest Framework</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>React Query</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Redux</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Redux Toolkit</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Firebase</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Express</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>Postgresql</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>MongoDB</p>
-                  </div>
-                  <div className="tool">
-                     <BiRightArrow className="icon" />
-                     <p>NodeJs</p>
-                  </div>
+                  {tools.map((tool, index) => (
+                     <AnimationOnScroll animateIn="animate__fadeInBottomLeft">
+                        {tool}
+                     </AnimationOnScroll>
+                  ))}
                </div>
             </div>
             <div className="image">
                <div className="container">
-                  <img src={dp} alt="picture" />
+                  <AnimationOnScroll animateIn="animate__fadeInRight">
+                     <img src={dp} alt="picture" />
+                  </AnimationOnScroll>
                </div>
             </div>
          </div>

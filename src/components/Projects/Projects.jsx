@@ -7,7 +7,7 @@ import project2 from "../../assets/projects/project2.png";
 import project3 from "../../assets/projects/project3.png";
 import project4 from "../../assets/projects/project4.png";
 import project5 from "../../assets/projects/project5.png";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 const projects = [
 	{
 		name: "Wubalubadubdub",
@@ -74,10 +74,12 @@ function Projects() {
 	return (
 		<div className="projects" id="projects">
 			<div className="title">
+				<AnimationOnScroll animateIn="animate__fadeInLeft">
 				<div>
 					<span>02.</span>
 					<h1>Some things i've built</h1>
 				</div>
+				</AnimationOnScroll>
 				<div className="line"></div>
 			</div>
 

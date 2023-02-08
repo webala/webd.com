@@ -17,15 +17,30 @@
    .logo {
       display: flex;
       align-items: center;
+      gap: 7px;
       cursor: pointer;
+
+      @media (min-width: 768px) {
+         gap: 30px;
+      }
 
       h1 {
          font-size: 24px;
          font-weight: 700;
          color: var(--colorSecondary);
+         margin-right: 15px;
       }
-      
+      .social {
+         color: var(--colorSecondary);
+         margin-top: 5px;
+      }
+
+      .social:hover {
+         color: white;
+      }
    }
+
+   
 
    .menu {
       display: flex;
@@ -103,5 +118,6 @@
       height: 100vh;
       padding: 10px 20px;
       z-index: 10;
+      background: rgb(2, 6, 36);;
    }
 }

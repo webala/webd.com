@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
 import { RiMenuFoldLine, RiMenuUnfoldFill } from "react-icons/ri";
+import { SiGithub, SiTwitter } from 'react-icons/si'
 
 function Navbar() {
 	const [isActive, setIsActive] = useState(false);
 
 	return (
 		<div className="navbar">
-			<a className="logo" href="/">
-				<h1>webd.com</h1>
-			</a>
+			<div className="logo">
+				<a href="/"><h1>webd.com</h1></a>
+
+				<a className="social" href="https://github.com/webala">
+					<SiGithub />
+				</a>
+				<a className="social" href="https://twitter.com/Webbie1001">
+					<SiTwitter />
+				</a>
+			</div>
+
 
 			<div className={isActive ? "nav-items active" : "nav-items"}>
 				<a className="item" href="#about">
