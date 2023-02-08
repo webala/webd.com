@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import { RiMenuFoldLine, RiMenuUnfoldFill } from "react-icons/ri";
 import { SiGithub, SiTwitter } from 'react-icons/si'
+import resume from '../../../resume.pdf'
 
 function Navbar() {
 	const [isActive, setIsActive] = useState(false);
@@ -34,7 +35,11 @@ function Navbar() {
 					<p>Contact</p>
 				</a>
 				<a className="item">
-					<button>Resume</button>
+					<a href={resume} download>
+						<button>
+							Resume
+						</button>
+					</a>
 				</a>
 			</div>
 
